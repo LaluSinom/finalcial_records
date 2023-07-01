@@ -1,4 +1,3 @@
-import 'package:finalcial_records/shared/theme.dart';
 import 'package:finalcial_records/ui/pages/add_financial_page.dart';
 import 'package:finalcial_records/ui/pages/avatar_page.dart';
 import 'package:finalcial_records/ui/pages/menu_page.dart';
@@ -8,7 +7,10 @@ import 'package:finalcial_records/ui/pages/sign_up_page.dart';
 import 'package:finalcial_records/ui/pages/splash_page.dart';
 import 'package:flutter/material.dart';
 
-void main(){
+import 'package:finalcial_records/shared/theme.dart';
+
+
+void main() {
   runApp(const MyApp());
 }
 
@@ -25,24 +27,21 @@ class MyApp extends StatelessWidget {
           backgroundColor: lightBackgroundColor,
           elevation: 0,
           centerTitle: true,
-          iconTheme: IconThemeData(
-            color: blackColor
-          ),
+          iconTheme: IconThemeData(color: blackColor),
           titleTextStyle: blackTextStyle.copyWith(
             fontSize: 20,
             fontWeight: semiBold,
           ),
         ),
       ),
-      
       routes: {
-        '/':(context) => const SplashPage(),
-        '/sign-in' :(context) => const SignInPage(),
-        '/sign-up' :(context) => const SignUpPage(),
-        '/menu' :(context) => const MenuPage(),
-        '/add' :(context) => const AddFinancialPage(),
-        '/profile' :(context) => const ProfilePage(),
-        '/avatar' :(context) => const AvatarPage(),
+        '/': (context) => const SplashPage(),
+        '/sign-in': (context) => const SignInPage(),
+        '/sign-up': (context) => const SignUpPage(),
+        '/menu': (context) => const MenuPage(),
+        '/add': (context) => const AddFinancialPage(),
+        '/profile': (context) => const ProfilePage(),
+        '/avatar': (context) => const AvatarPage(),
       },
     );
   }
