@@ -31,14 +31,18 @@ class _SplashPageState extends State<SplashPage> {
     return Scaffold(
       backgroundColor: whiteColor,
       body: Center(
-        child: Container(
-          width: 164,
-          height: 164,
-          decoration: const BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('assets/money.png'),
+        child: Column(
+          children: [
+            Container(
+              width: 164,
+              height: 164,
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/money.png'),
+                ),
+              ),
             ),
-          ),
+          ],
         ),
       ),
     );

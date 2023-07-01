@@ -23,6 +23,7 @@ class Catatan {
       catatan: jsonData['catatan'],
     );
   }
+
   static Map<String, dynamic> toMap(Catatan cat) => {
         'id': cat.id,
         'tanggal': cat.tanggal,
@@ -33,6 +34,7 @@ class Catatan {
       };
   static String encode(List<Catatan> cats) => json.encode(
       cats.map<Map<String, dynamic>>((cat) => Catatan.toMap(cat)).toList());
+      
   static List<Catatan> decode(String cats) =>
       (json.decode(cats) as List<dynamic>)
           .map((item) => Catatan.fromJson(item))

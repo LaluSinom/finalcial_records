@@ -1,7 +1,6 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedPrefUtils {
-
   static saveNama(String nama) async {
     final SharedPreferences pref = await SharedPreferences.getInstance();
     pref.setString('nama', nama);
