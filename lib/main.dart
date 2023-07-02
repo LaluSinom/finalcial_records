@@ -6,9 +6,7 @@ import 'package:finalcial_records/ui/pages/sign_in_page.dart';
 import 'package:finalcial_records/ui/pages/sign_up_page.dart';
 import 'package:finalcial_records/ui/pages/splash_page.dart';
 import 'package:flutter/material.dart';
-
 import 'package:finalcial_records/shared/theme.dart';
-
 
 void main() {
   runApp(const MyApp());

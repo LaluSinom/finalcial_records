@@ -92,24 +92,25 @@ class _AddFinancialPageState extends State<AddFinancialPage> {
       ),
       body: Center(
         child: isLoading
-            ? SpinKitCubeGrid(
+            ? SpinKitDancingSquare(
                 size: 140,
                 color: purpleLight2Color,
               )
             : successMessage.isNotEmpty
                 ? Column(
+                    //============>centang<=====================//
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       const SizedBox(height: 20),
-                      Icon(
+                      const Icon(
                         Icons.check_circle,
-                        color: Colors.blue,
+                        color: Color.fromARGB(255, 18, 180, 26),
                         size: 48,
                       ),
                       const SizedBox(height: 10),
                       Text(
                         successMessage,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                         ),

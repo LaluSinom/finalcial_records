@@ -33,12 +33,13 @@ class _SplashPageState extends State<SplashPage> {
       body: Center(
         child: Column(
           children: [
+            const Padding(padding: EdgeInsets.only(top: 250)),
             Container(
-              width: 164,
-              height: 164,
+              width: 364,
+              height: 364,
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/money.png'),
+                  image: AssetImage('assets/welcome.png'),
                 ),
               ),
             ),

@@ -35,15 +35,15 @@ class SignUpPage extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 24),
         children: [
           Container(
-            width: 155,
-            height: 80,
+            width: 355,
+            height: 160,
             margin: const EdgeInsets.only(
-              top: 70,
-              bottom: 80,
+              top: 50,
+              bottom: 60,
             ),
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/financial_records.JPG'),
+                image: AssetImage('assets/welcome.png'),
               ),
             ),
           ),

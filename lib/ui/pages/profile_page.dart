@@ -10,7 +10,7 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('My Profile'),
+        title: const Text('Profile Saya'),
         leading: IconButton(
             onPressed: () {
               Navigator.pushNamed(context, '/menu');
@@ -99,7 +99,7 @@ class ProfilePage extends StatelessWidget {
                   future: SharedPrefUtils.readSaldo(),
                   builder: (context, snapshot) {
                     return ProfileMenuItem(
-                      iconUrl: 'assets/money.png',
+                      iconUrl: 'assets/dollar.png',
                       title: 'Saldo',
                       subTitle: snapshot.data.toString(),
                       tag: 1,

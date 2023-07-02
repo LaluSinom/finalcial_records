@@ -37,12 +37,14 @@ class _MenuPageState extends State<MenuPage> {
           buildHistory(context),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
+      floatingActionButton: FloatingActionButton.extended(
+        elevation: 20.0,
         onPressed: () {
           Navigator.pushNamed(context, '/add');
         },
-        backgroundColor: purpleColor,
-        child: const Icon(Icons.add),
+        backgroundColor: const Color.fromARGB(255, 24, 36, 96),
+        label: const Text(
+            '                           Tambah                             '),
       ),
     );
   }
@@ -118,7 +120,7 @@ class _MenuPageState extends State<MenuPage> {
         borderRadius: BorderRadius.circular(28),
         image: const DecorationImage(
           fit: BoxFit.cover,
-          image: AssetImage('assets/img_bg_card.png'),
+          image: AssetImage('assets/dash.png'),
         ),
       ),
       child: SingleChildScrollView(
@@ -209,7 +211,7 @@ class _MenuPageState extends State<MenuPage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Histori Transaksi',
+            'Riwayat Transaksi',
             style: blackTextStyle.copyWith(
               fontSize: 16,
               fontWeight: semiBold,
@@ -246,8 +248,8 @@ class _MenuPageState extends State<MenuPage> {
                                 .tipeTransaksi
                                 .toString() ==
                             'pemasukan'
-                        ? '+ ${formatCurrency(snapshot.data!.elementAt(index).jumlah, symbol: '')}'
-                        : '- ${formatCurrency(snapshot.data!.elementAt(index).jumlah, symbol: '')}',
+                        ? '+ ${formatCurrency(snapshot.data?.elementAt(index).jumlah, symbol: '')}'
+                        : '- ${formatCurrency(snapshot.data?.elementAt(index).jumlah, symbol: '')}',
                   ),
                 );
               },

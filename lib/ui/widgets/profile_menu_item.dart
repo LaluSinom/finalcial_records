@@ -29,7 +29,7 @@ class ProfileMenuItem extends StatelessWidget {
           children: [
             Image.asset(
               iconUrl,
-              width: 24,
+              width: 29,
             ),
             const SizedBox(
               width: 18,
@@ -41,7 +41,7 @@ class ProfileMenuItem extends StatelessWidget {
               ),
             ),
             const Spacer(),
-            tag == 1
+            tag == 2
                 ? Container(
                     width: 90,
                     height: 20,
